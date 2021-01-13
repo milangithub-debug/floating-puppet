@@ -1,0 +1,143 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #2c3a47;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ghost{
+    width: 140px;
+    height: 160px;
+    background-color: #f2f2f2;
+    border-radius: 70px 70px 0 0;
+    position: relative;
+    cursor: pointer;
+    animation: floating 2s  infinite ease-in-out;
+}
+@keyframes floating{
+    50%{
+        transform: translateY(-30px);
+    }
+    
+}
+.face{
+    width: 100px;
+    position: absolute;
+    top: 60px;
+    left: calc(50% - 50px);
+}
+.face :hover{
+    top: 45px;
+}
+.eyes{
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 14px;
+}
+.eyes span{
+    width: 24px;
+    height: 24px;
+    margin: 4px;
+    background-color: #2c3a47;
+    border-radius: 50%;
+    transition: .3s linear;
+}
+.ghost:hover .eyes span{
+    height: 16px;
+}
+.mouth{
+    width: 40px;
+    height: 20px;
+    background-color: #2c3a47;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
+    transition: .3s linear;
+}
+.ghost:hover .mouth{
+    width: 30px;
+}
+.hands{
+    width: 180px;
+    position: absolute;
+    left: -20px;
+    top: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.hands span{
+    width: 20px;
+    height: 30px;
+    background-color: #f2f2f2;
+}
+.hands span:first-child{
+    border-radius: 20px 0 0 20px;
+}
+.hands span:last-child{
+    border-radius: 0 20px 20px 0;
+}
+.feet{
+    position: absolute;
+    width: 100%;
+    bottom: -20px;
+    display: flex;
+}
+.feet span{
+    flex: 1;
+    height: 20px;
+    background-color: #f2f2f2;
+    border-radius: 0 0 20px 20px;
+}
+.feet span:first-child{
+    border-radius: 0 0 20px 12px ;
+
+}
+.feet span:first-child{
+    border-radius: 0 0 12px 20px ;
+
+}
+h1{
+    font-family: cursive;
+    cursor: pointer;
+    color: #f2f2f2;
+    padding: 20px;
+}
+h3{
+    font-family: cursive;
+    cursor: pointer;
+    color: #f2f2f2;
+    padding: 20px;
+    margin: 310px 0px 0px -600px;
+}
+.inp{
+    scroll-behavior: smooth;
+    size: 30px;
+    margin: 310px 0px 0px 0px;
+    border-radius: 78px;
+    height: 44px;
+    font-style: italic;
+    border: #f2f2f2;
+    
+}
+.btn{
+    color:#2c3a47;
+    width: 312px;
+    margin: 500px 0px 0px 0px;
+    background-color: #f2f2f2;
+    height: 44px;
+    border-radius: 30pc;
+    cursor: pointer;
+    border: #f2f2f2;
+
+    
+}
+.btn:hover{
+    background-color: black;
+    width:330px;
+    color: #f2f2f2;
+    transition: 0.5s ease-in-out;
+    border: black;
+}
